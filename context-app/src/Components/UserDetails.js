@@ -12,6 +12,8 @@ function UserDetails() {
         setError,
         textFilter,
         likeFilter} = useContext(AppContext);
+
+        console.log('chosenTag:',chosenTag);
     
     const selectedTag = chosenTag;
     const controller = new AbortController();
@@ -106,7 +108,7 @@ function UserDetails() {
     else{
         result = "No tag selected";
     }
-    
+
     return (
         result
     )
